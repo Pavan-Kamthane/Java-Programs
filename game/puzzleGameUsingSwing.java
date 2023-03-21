@@ -2,43 +2,44 @@ import java.awt.*;
 import javax.swing.*;  
 import java.awt.event.*;  
 public class puzzle extends JFrame implements ActionListener{  
-JButton b1,b2,b3,b4,b5,b6,b7,b8,b9,next;  
-puzzle(){  
-super("Puzzle Game - JavaTpoint");  
- b1=new JButton("1");  
- b2=new JButton(" ");  
- b3=new JButton("3");  
- b4=new JButton("4");  
- b5=new JButton("5");  
- b6=new JButton("6");  
- b7=new JButton("7");  
- b8=new JButton("8");  
- b9=new JButton("2");  
- next=new JButton("next");  
-  
-b1.setBounds(10,30,50,40);  
-b2.setBounds(70,30,50,40);  
-b3.setBounds(130,30,50,40);  
-b4.setBounds(10,80,50,40);  
-b5.setBounds(70,80,50,40);  
-b6.setBounds(130,80,50,40);  
-b7.setBounds(10,130,50,40);  
-b8.setBounds(70,130,50,40);  
-b9.setBounds(130,130,50,40);  
-next.setBounds(70,200,100,40);  
+    JButton b1,b2,b3,b4,b5,b6,b7,b8,b9,next;  
     
-add(b1);add(b2);add(b3);add(b4);add(b5);add(b6);add(b7);add(b8);add(b9); add(next);  
-b1.addActionListener(this);  
-b2.addActionListener(this);  
-b3.addActionListener(this);  
-b4.addActionListener(this);  
-b5.addActionListener(this);  
-b6.addActionListener(this);  
-b7.addActionListener(this);  
-b8.addActionListener(this);  
-b9.addActionListener(this);  
-next.addActionListener(this);  
+    puzzle(){  
+        super("Puzzle Game - JavaTpoint");  
+        b1=new JButton("1");  
+        b2=new JButton(" ");  
+        b3=new JButton("3");  
+        b4=new JButton("4");  
+        b5=new JButton("5");  
+        b6=new JButton("6");  
+        b7=new JButton("7");  
+        b8=new JButton("8");  
+        b9=new JButton("2");  
+        next=new JButton("next");  
   
+        b1.setBounds(10,30,50,40);  
+        b2.setBounds(70,30,50,40);  
+        b3.setBounds(130,30,50,40);  
+        b4.setBounds(10,80,50,40);  
+        b5.setBounds(70,80,50,40);  
+        b6.setBounds(130,80,50,40);  
+        b7.setBounds(10,130,50,40);  
+        b8.setBounds(70,130,50,40);  
+        b9.setBounds(130,130,50,40);  
+        next.setBounds(70,200,100,40);  
+        
+        add(b1);add(b2);add(b3);add(b4);add(b5);add(b6);add(b7);add(b8);add(b9); add(next);  
+        b1.addActionListener(this);  
+        b2.addActionListener(this);  
+        b3.addActionListener(this);  
+        b4.addActionListener(this);  
+        b5.addActionListener(this);  
+        b6.addActionListener(this);  
+        b7.addActionListener(this);  
+        b8.addActionListener(this);  
+        b9.addActionListener(this);  
+        next.addActionListener(this);  
+        
 next.setBackground(Color.black);  
 next.setForeground(Color.green);  
 setSize(250,300);  
